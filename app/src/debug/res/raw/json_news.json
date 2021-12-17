@@ -1,0 +1,23 @@
+{
+  "content": [
+    {
+      "articleId": 1,
+      "title": "Triathlon Côte de Granit Rose",
+      "subtitle": "Lanion (22)",
+      "illustration": "https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "articleId": 2,
+      "title": "Notre Top 3 des courses Triathlon en Bretagne",
+      "subtitle": "Sélection Onirun",
+      "illustration": "https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "articleId": 3,
+      "title": "Vincent Luis Champion de France 2018",
+      "subtitle": "Coureur à suivre",
+      "illustration": "https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    }
+  ],
+  "totalPages": 1
+}

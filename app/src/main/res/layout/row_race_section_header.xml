@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.onirun.recyclerview.RaceSectionHeader" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textViewDate"
+            style="@style/textViewTitleBig"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/textViewNbRaces"
+            android:text="@{item.getDisplayableDate()}"
+            tools:text="Juin 2018" />
+
+        <TextView
+            android:id="@+id/textViewNbRaces"
+            style="@style/textViewSubtitle"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="@{item.getDisplayableNbRaces(context)}"
+            tools:text="3 courses" />
+
+    </RelativeLayout>
+
+</layout>

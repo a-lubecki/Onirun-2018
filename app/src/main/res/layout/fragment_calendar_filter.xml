@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundDefault"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        style="@style/textViewTitleBig"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/calendar_filter_title" />
+
+    <LinearLayout
+        android:id="@+id/layoutOwner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            style="@style/textViewDefault"
+            android:text="@string/calendar_type_owner" />
+
+    </LinearLayout>
+
+    <View style="@style/separatorDefault" />
+
+    <LinearLayout
+        android:id="@+id/layoutFriends"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            style="@style/textViewDefault"
+            android:text="@string/calendar_type_friends" />
+
+    </LinearLayout>
+
+    <View style="@style/separatorDefault" />
+
+    <LinearLayout
+        android:id="@+id/layoutOwnerAndFriends"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            style="@style/textViewDefault"
+            android:text="@string/calendar_type_owner_and_friends" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

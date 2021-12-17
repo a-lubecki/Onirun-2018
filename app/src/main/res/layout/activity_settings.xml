@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_default" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <com.onirun.views.AvatarView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                app:isSizeBig="true" />
+
+            <TextView
+                android:id="@+id/textViewUserName"
+                style="@style/textViewTitleBig"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="@string/settings_promote_title" />
+
+            <TextView
+                android:id="@+id/textViewGrade"
+                style="@style/textViewSubtitle"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                tools:text="@string/settings_promote_subtitle" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                style="@style/buttonDefault"
+                android:layout_marginTop="24dp"
+                android:text="@string/settings_login" />
+
+            <Button
+                android:id="@+id/buttonProfile"
+                style="@style/buttonBorderlessDefault"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="@string/settings_update_profile" />
+
+            <LinearLayout
+                android:id="@+id/layoutLocation"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    style="@style/textViewDefault"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings_location" />
+
+                <TextView
+                    android:id="@+id/textViewInfoLocation"
+                    style="@style/textViewAction"
+                    android:gravity="end"
+                    tools:text="[29, 35]" />
+
+            </LinearLayout>
+
+            <View style="@style/separatorDefault" />
+
+            <LinearLayout
+                android:id="@+id/layoutRaceType"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    style="@style/textViewDefault"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings_race_types" />
+
+                <TextView
+                    android:id="@+id/textViewInfoRaceType"
+                    style="@style/textViewAction"
+                    android:gravity="end"
+                    tools:text="5" />
+
+            </LinearLayout>
+
+            <View style="@style/separatorDefault" />
+
+            <LinearLayout
+                android:id="@+id/layoutRaceFormat"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    style="@style/textViewDefault"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings_race_formats" />
+
+                <TextView
+                    android:id="@+id/textViewInfoRaceFormat"
+                    style="@style/textViewAction"
+                    android:gravity="end"
+                    tools:text="5" />
+
+            </LinearLayout>
+
+            <View style="@style/separatorDefault" />
+
+            <LinearLayout
+                android:id="@+id/layoutFriends"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    style="@style/textViewDefault"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings_friends" />
+
+                <TextView
+                    android:id="@+id/textViewInfoFriends"
+                    style="@style/textViewAction"
+                    android:gravity="end"
+                    android:text="0"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <View style="@style/separatorDefault" />
+
+            <TextView
+                android:id="@+id/textViewNotification"
+                style="@style/textViewDefault"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="@string/settings_notifications" />
+
+            <View style="@style/separatorDefault" />
+
+            <TextView
+                style="@style/textViewTitle"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="@string/settings_section_about" />
+
+            <TextView
+                android:id="@+id/textViewSuggest"
+                style="@style/textViewDefault"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="@string/settings_suggest" />
+
+            <View style="@style/separatorDefault" />
+
+            <TextView
+                android:id="@+id/textViewComment"
+                style="@style/textViewDefault"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="@string/settings_comment" />
+
+            <View style="@style/separatorDefault" />
+
+            <TextView
+                android:id="@+id/textViewAbout"
+                style="@style/textViewDefault"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="@string/settings_about" />
+
+            <View style="@style/separatorDefault" />
+
+            <TextView
+                android:id="@+id/textViewTerms"
+                style="@style/textViewDefault"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="@string/settings_terms" />
+
+            <View style="@style/separatorDefault" />
+
+            <TextView
+                android:id="@+id/textViewPrivacy"
+                style="@style/textViewDefault"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="@string/settings_privacy" />
+
+            <View style="@style/separatorDefault" />
+
+            <Button
+                android:id="@+id/buttonLogout"
+                style="@style/textViewAction"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:text="@string/settings_logout"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp"
+                android:contentDescription="@null"
+                android:src="@drawable/logo_grey" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

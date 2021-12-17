@@ -1,0 +1,46 @@
+{
+  "departments": [
+    "22",
+    "29",
+    "35",
+    "56"
+  ],
+  "raceFormats": [
+    "children",
+    "women",
+    "fun",
+    "night",
+    "elevation",
+    "team",
+    "official",
+    "disabled",
+    "charity"
+  ],
+  "raceTypes": [
+    "road",
+    "urbanTrail",
+    "vertical",
+    "halfMarathon",
+    "marathon",
+    "duration",
+    "cycling",
+    "trek",
+    "nordic",
+    "orienteering",
+    "obstacle",
+    "nature",
+    "bike",
+    "shortTrail",
+    "longTrail",
+    "ultraTrail",
+    "runBike",
+    "bikathlon",
+    "duathlon",
+    "adventure",
+    "triathlon",
+    "aquathlon",
+    "halfIronman",
+    "ironman",
+    "canicross"
+  ]
+}

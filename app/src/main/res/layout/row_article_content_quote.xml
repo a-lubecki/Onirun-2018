@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="16dp">
+
+    <View
+        android:id="@+id/viewDecoration"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/textViewText"
+        android:layout_alignBottom="@id/textViewAuthor"
+        android:layout_marginTop="6dp"
+        android:background="@color/textSubtitle" />
+
+    <TextView
+        android:id="@+id/textViewText"
+        style="@style/textViewSubtitle"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/viewDecoration"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:textStyle="italic"
+        tools:text="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit" />
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        style="@style/textViewSubtitle"
+        android:layout_below="@+id/textViewText"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/viewDecoration"
+        android:textStyle="italic"
+        tools:text="- Yann Godard" />
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineMarginBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="12dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineMarginEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="12dp" />
+
+    <TextView
+        android:id="@+id/textViewTypeDistance"
+        style="@style/textViewAlternative"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Trail" />
+
+    <com.onirun.views.ChallengeTagView
+        android:id="@+id/textViewChallenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTypeDistance" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@id/buttonFriendsNone"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChallenge"
+        tools:text="Trail 15km - 7km" />
+
+    <View
+        android:id="@+id/viewSpacing"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewDetails"
+        style="@style/textViewSubtitle"
+        android:lineSpacingExtra="4dp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toBottomOf="@+id/viewSpacing"
+        tools:text="Départ : 14h30 et 15h00\nLieu : Jardins des remparts\nPrix : gratuit" />
+
+    <LinearLayout
+        android:id="@+id/layoutFormats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetails" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        style="@style/textViewSubtitle"
+        android:layout_width="0dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFormats"
+        tools:text="Bla bla bla" />
+
+    <Button
+        android:id="@+id/buttonSeeMore"
+        style="@style/buttonBorderlessDefault"
+        android:text="@string/event_description_show_more"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+    <View
+        style="@style/separatorDefault"
+        android:layout_width="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSeeMore" />
+
+    <ImageButton
+        android:id="@+id/buttonFriendsNone"
+        style="@style/imageButtonDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/race_friends_challenge"
+        android:src="@drawable/add_friend_off"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEngage"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitle"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitle" />
+
+    <Button
+        android:id="@+id/buttonFriendsSome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/add_friend_on"
+        android:contentDescription="@string/race_friends_challenge"
+        android:fontFamily="@font/firasans_medium"
+        android:src="@drawable/add_friend_off"
+        android:textColor="@color/textDark"
+        android:textSize="18sp"
+        app:fontFamily="@font/firasans_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEngage"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitle"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitle"
+        tools:text="+1" />
+
+    <ImageButton
+        android:id="@+id/buttonEngage"
+        style="@style/imageButtonDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/race_engage_title"
+        android:src="@drawable/add_calendar_off"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitle" />
+
+</android.support.constraint.ConstraintLayout>

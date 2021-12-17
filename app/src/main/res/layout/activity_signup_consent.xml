@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/textViewTerms"
+            style="@style/textViewTitle"
+            android:text="@string/signup_consent_terms_title" />
+
+        <TextView
+            android:id="@+id/textViewTermsSubtitle"
+            style="@style/textViewSubtitle"
+            android:layout_below="@+id/textViewTerms"
+            android:layout_marginTop="12dp"
+            tools:text="@string/signup_consent_terms_subtitle" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:checked="false"
+            android:theme="@style/ThemeSwitch" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/separatorDefault"
+        android:layout_margin="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/textViewPush"
+            style="@style/textViewTitle"
+            android:text="@string/signup_consent_push_title" />
+
+        <TextView
+            style="@style/textViewSubtitle"
+            android:layout_below="@+id/textViewPush"
+            android:layout_marginTop="12dp"
+            android:text="@string/signup_consent_push_subtitle" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchPush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:checked="false"
+            android:theme="@style/ThemeSwitch" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/separatorDefault"
+        android:layout_margin="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/textViewMail"
+            style="@style/textViewTitle"
+            android:text="@string/signup_consent_mail_title" />
+
+        <TextView
+            style="@style/textViewSubtitle"
+            android:layout_below="@+id/textViewMail"
+            android:layout_marginTop="12dp"
+            android:text="@string/signup_consent_mail_subtitle" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:checked="false"
+            android:theme="@style/ThemeSwitch" />
+
+    </RelativeLayout>
+
+</LinearLayout>

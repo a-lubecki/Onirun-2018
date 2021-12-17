@@ -1,0 +1,86 @@
+{
+  "articleId": 123456,
+  "title": "Notre Top 3 des courses Triathlon en Bretagne",
+  "illustration": "https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  "slug": "https://www.onirun.com/articles/top3-triathlon-bretagne",
+  "type": "default",
+  "content": [
+    {
+      "type": "p",
+      "title": "Titre de paragraphe",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien."
+    },
+    {
+      "type": "events",
+      "events": [
+        {
+          "eventId": 1656,
+          "name": "Marathon de Vannes",
+          "city": "Vannes",
+          "dateBegin": 1540072800,
+          "dateEnd": 1540159199,
+          "department": "56",
+          "zipCode": "56000",
+          "raceTypes": [
+            "marathon",
+            "road"
+          ],
+          "raceFormats": [
+            "elevation",
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2011,
+          "name": "Vétathlon Brocéliande d'Iffendic",
+          "city": "Iffendic",
+          "dateBegin": 1540080000,
+          "dateEnd": 1540080000,
+          "department": "35",
+          "zipCode": "35750",
+          "raceTypes": [
+            "bikathlon"
+          ],
+          "raceFormats": [
+            "team",
+            "charity",
+            "children",
+            "official"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 20
+        },
+        {
+          "eventId": 2014,
+          "name": "Triathlon du Pays de la Vilaine",
+          "city": "La Roche-Bernard",
+          "dateBegin": 1540857600,
+          "dateEnd": 1540857600,
+          "department": "56",
+          "zipCode": "56130",
+          "raceTypes": [
+            "triathlon"
+          ],
+          "raceFormats": [
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "title": "Titre de paragraphe",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien."
+    }
+  ]
+}

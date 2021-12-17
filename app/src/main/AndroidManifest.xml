@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.onirun">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/APP_NAME"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n">
+
+        <activity
+            android:name=".screens.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/FIREBASE_DYNAMIC_LINK_HOST"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/FIREBASE_DYNAMIC_LINK_HOST"
+                    android:scheme="https" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".screens.onboarding.OnboardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNonAnimated" />
+
+        <activity
+            android:name=".screens.onboarding.OnboardingDoneActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.splash.ConfigureActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNonAnimated" />
+
+        <activity
+            android:name=".screens.onboarding.AcceptRaceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.onboarding.AcceptFriendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.event.EventActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.event.EventIllustrationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.news.NewsArticleActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.login.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.login.LoginMailCheckActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.login.MailSignUpActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.login.MailSignInActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.login.SignUpConsentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.account.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.account.UserNameActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.settings.SettingsLocationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.settings.SettingsRaceFormatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.settings.SettingsRaceTypeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.notification.SettingsNotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.friends.RaceFriendsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.friends.FriendsListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.friends.FriendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screens.web.WebActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.OnirunFCMService"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+        </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+    </application>
+
+</manifest>

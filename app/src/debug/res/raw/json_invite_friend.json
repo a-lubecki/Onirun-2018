@@ -1,0 +1,8 @@
+{
+  "isFriend": false,
+  "runner": {
+    "runnerId": 123456,
+    "userName": "Toto",
+    "grade": "pro"
+  }
+}

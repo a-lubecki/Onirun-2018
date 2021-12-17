@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/toolbar_default" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <TextView
+                style="@style/textViewSubtitle"
+                android:text="@string/profile_subtitle_grade"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewGrade"
+                style="@style/textViewDefault"
+                tools:text="Coureur Débutant" />
+
+            <TextView
+                style="@style/textViewSubtitle"
+                android:layout_marginTop="16dp"
+                android:text="@string/profile_subtitle_questions"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <!-- layout is filled with questions in the class -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutQClubName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/textViewClubName"
+                    style="@style/textViewSubtitle"
+                    android:layout_gravity="start"
+                    android:labelFor="@+id/editTextClubName"
+                    android:text="@string/profile_question_club_name" />
+
+                <EditText
+                    android:id="@+id/editTextClubName"
+                    style="@style/editTextDefault"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textCapSentences"
+                    android:theme="@style/ThemeEditText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

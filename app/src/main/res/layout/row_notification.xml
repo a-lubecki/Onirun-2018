@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.onirun.model.Notification" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="#f00">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineMarginBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineMarginEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <TextView
+            android:id="@+id/textViewEmoji"
+            style="@style/textViewEmoji"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{item.emoji}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="A" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            style="@style/textViewSubtitle"
+            android:layout_width="0dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+            app:layout_constraintStart_toEndOf="@+id/textViewEmoji"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Il y a 20 min" />
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            style="@style/textViewDefault"
+            android:layout_width="0dp"
+            android:layout_marginBottom="12dp"
+            android:text="@{item.message}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+            app:layout_constraintStart_toEndOf="@+id/textViewEmoji"
+            tools:text="Découvrez cette semaine notre course à la une « Triathlon XXL Corsaire »" />
+
+        <View
+            style="@style/separatorDefault"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

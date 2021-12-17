@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/textViewTitleBig"
+        android:layout_marginBottom="16dp"
+        tools:text="Titre" />
+
+    <TextView
+        android:id="@+id/textViewText"
+        style="@style/textViewSubtitle"
+        android:lineSpacingExtra="4dp"
+        tools:text="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit" />
+
+</LinearLayout>

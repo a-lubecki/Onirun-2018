@@ -1,0 +1,14 @@
+{
+  "mailNotifs": {
+    "friends": false,
+    "news": false,
+    "races": true,
+    "suggest": true
+  },
+  "pushNotifs": {
+    "friends": false,
+    "news": true,
+    "races": false,
+    "suggest": true
+  }
+}

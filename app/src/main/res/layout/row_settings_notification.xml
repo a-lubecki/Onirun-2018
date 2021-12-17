@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.onirun.recyclerview.NotificationSettingsSection" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/textViewTitle"
+            android:text="@{item.title}"
+            tools:text="Le suivi de vos courses" />
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            style="@style/textViewSubtitle"
+            android:layout_marginTop="8dp"
+            android:text="@{item.subtitle}"
+            tools:text="Changement de date ou d’horaire, ne manquez rien des modifications de courses !" />
+
+        <LinearLayout
+            android:id="@+id/layoutPush"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="@{item.layoutPushVisibility}">
+
+            <TextView
+                android:id="@+id/textViewPush"
+                style="@style/textViewDefault"
+                android:layout_width="0dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="@string/settings_notif_push" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchSelectPush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeSwitch" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/separatorDefault"
+            android:visibility="@{item.separatorVisibility}" />
+
+        <LinearLayout
+            android:id="@+id/layoutMail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="@{item.layoutMailVisibility}">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                style="@style/textViewDefault"
+                android:layout_width="0dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="@string/settings_notif_mail" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchSelectMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeSwitch" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="zeplinBlack">#1e1e1e</color>
+    <color name="zeplinBlackTwo">#282828</color>
+    <color name="zeplinSlateGrey">#6d6e72</color>
+    <color name="zeplinGreyish">#b2b2b2</color>
+    <color name="zeplinWhite">#f5f5f5</color>
+    <color name="zeplinWhiteTwo">#ffffff</color>
+    <color name="zeplinElectricLime">#adff00</color>
+    <color name="zeplinBeige">#dcdc9b</color>
+
+    <color name="backgroundTheme">@color/zeplinElectricLime</color>
+    <color name="backgroundToolBar">@color/zeplinBlack</color>
+    <color name="backgroundTabBar">@color/zeplinBlackTwo</color>
+    <color name="backgroundDark">@color/zeplinBlack</color>
+    <color name="backgroundDefault">@color/zeplinBlack</color>
+    <color name="backgroundAlternative">@color/zeplinBlackTwo</color>
+    <color name="backgroundButton">@color/zeplinBlackTwo</color>
+    <color name="backroundButtonToggleOn">@color/zeplinWhite</color>
+    <color name="backgroundBox">@color/zeplinBeige</color>
+    <color name="foregroundSwitch">@color/zeplinWhite</color>
+    <color name="foregroundEditText">@color/zeplinGreyish</color>
+
+    <color name="textDefault">@color/zeplinWhiteTwo</color>
+    <color name="textAlternative">@color/zeplinBeige</color>
+    <color name="textTitle">@color/zeplinWhite</color>
+    <color name="textSubtitle">@color/zeplinGreyish</color>
+    <color name="textDark">@color/zeplinBlack</color>
+    <color name="textAction">@color/zeplinElectricLime</color>
+    <color name="textButton">@color/zeplinWhite</color>
+
+    <color name="mainTabActive">@color/zeplinWhiteTwo</color>
+    <color name="mainTabInactive">@color/zeplinSlateGrey</color>
+
+    <color name="separatorDefault">@color/zeplinSlateGrey</color>
+
+</resources>

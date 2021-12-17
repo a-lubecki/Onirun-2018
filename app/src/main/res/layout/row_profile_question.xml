@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="22dp"
+    android:paddingBottom="22dp">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        style="@style/textViewSubtitle"
+        android:gravity="center"
+        tools:text="Depuis combien d'années courez-vous ?" />
+
+    <LinearLayout
+        android:id="@+id/layoutAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <!-- filled with toggle buttons in class -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAnswersOverflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <!-- filled with toggle buttons in class -->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.onirun.model.RunnerEvent" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineMarginBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="12dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineMarginEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="12dp" />
+
+        <TextView
+            android:id="@+id/textViewTypes"
+            style="@style/textViewAlternative"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:text="@{item.getDisplayableTypes()}"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="trail - trail long" />
+
+        <com.onirun.views.ChallengeTagView
+            android:id="@+id/textViewChallenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTypes" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            android:text="@{item.name}"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewHasFriends"
+            app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+            app:layout_constraintTop_toBottomOf="@+id/textViewChallenge"
+            tools:text="Trail des remparts" />
+
+        <ImageView
+            android:id="@+id/imageViewHasFriends"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/friend_no"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewEngagement"
+            app:layout_constraintTop_toTopOf="@+id/textViewTitle" />
+
+        <ImageView
+            android:id="@+id/imageViewEngagement"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/run_no"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+            app:layout_constraintTop_toTopOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            style="@style/textViewSubtitle"
+            android:text="@{item.getDisplayableLocationDate()}"
+            app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            tools:text="Samedi 6 juin • Vannes" />
+
+        <LinearLayout
+            android:id="@+id/layoutFormats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+        <View
+            style="@style/separatorDefault"
+            android:layout_width="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineMarginEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineMarginBegin"
+            app:layout_constraintTop_toBottomOf="@+id/layoutFormats" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

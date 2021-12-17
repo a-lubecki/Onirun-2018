@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.onirun.model.Department" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/textViewDepartmentCode"
+            style="@style/textViewSubtitle"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:text="@{item.getDisplayableCode()}"
+            android:textColor="@color/textSubtitle"
+            tools:text="[22]" />
+
+        <TextView
+            android:id="@+id/textViewDepartmentName"
+            style="@style/textViewDefault"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:layout_toEndOf="@+id/textViewDepartmentCode"
+            android:layout_toStartOf="@+id/switchSelect"
+            android:text="@{item.name}"
+            tools:text="Côtes d’Armor" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:theme="@style/ThemeSwitch" />
+
+        <View
+            style="@style/separatorDefault"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+</layout>

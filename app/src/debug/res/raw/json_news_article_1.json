@@ -1,0 +1,50 @@
+{
+  "articleId": 123456,
+  "title": "Triathlon Côte de Granit Rose",
+  "illustration": "https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  "slug": "https://www.onirun.com/articles/triathlon-granit-rose",
+  "type": "event",
+  "event": {
+    "eventId": 123,
+    "city": "Lannion",
+    "department": "22"
+  },
+  "content": [
+    {
+      "type": "p",
+      "title": "Titre de paragraphe",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien."
+    },
+    {
+      "type": "quote",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien.",
+      "author": "Yann Godard"
+    },
+    {
+      "type": "p",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien."
+    },
+    {
+      "type": "img",
+      "url": "https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "type": "p",
+      "title": "Titre de paragraphe",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien."
+    },
+    {
+      "type": "p",
+      "title": "Titre de paragraphe",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien."
+    },
+    {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=f2qy87HC1Ws"
+    },
+    {
+      "type": "p",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec porta sapien."
+    }
+  ]
+}

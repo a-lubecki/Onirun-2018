@@ -1,0 +1,159 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+android {
+
+    compileSdkVersion versions.sdkTarget
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+
+        applicationId "com.onirun"
+
+        minSdkVersion versions.sdkMin
+        targetSdkVersion versions.sdkTarget
+
+        versionCode 6
+        versionName "1.0.5"
+
+        resValue 'string', 'APP_NAME', 'Onirun'
+
+        buildConfigField "boolean", "IS_LOGGER_ENABLED", 'false'
+        buildConfigField "boolean", "IS_CRASHLYTICS_ENABLED", 'false'
+        buildConfigField "boolean", "CAN_DEBUG_API", 'false'
+
+        buildConfigField "String", "ONIRUN_URL_API", '"https://XXXXXXXXXX/"'
+        buildConfigField "String", "ONIRUN_URL_API_STORAGES", 'ONIRUN_URL_API + "storages/"'
+        buildConfigField "String", "ONIRUN_URL_DESKTOP", '"https://XXXXXXXXXX/"'
+        buildConfigField "String", "ONIRUN_AUTHORITY_DYNAMIC_LINK", '"link.onirun.com"'
+        buildConfigField "String", "ONIRUN_EMAIL_CONTACT", '"XXXXXXXXXX"'
+
+        resValue 'string', 'FIREBASE_DYNAMIC_LINK_HOST', 'onirun.page.link'
+        buildConfigField "String", "FIREBASE_IOS_PACKAGE", '"com.onirun"'
+        buildConfigField "String", "FIREBASE_IOS_APP_STORE_ID", '""'
+        //TODO ajouter lorsque la page itunes connect sera créée
+
+        resValue 'string', 'FACEBOOK_APP_ID', 'XXXXXXXXXX'
+        resValue 'string', 'FB_LOGIN_PROTOCOL_SCHEME', 'XXXXXXXXXX'
+
+        buildConfigField 'int', 'ANIM_START_ENTER', 'com.onirun.R.anim.enter_slide_up'
+        buildConfigField 'int', 'ANIM_START_EXIT', 'com.onirun.R.anim.scale_out'
+        buildConfigField 'int', 'ANIM_FINISH_ENTER', 'com.onirun.R.anim.scale_in'
+        buildConfigField 'int', 'ANIM_FINISH_EXIT', 'com.onirun.R.anim.exit_slide_down'
+    }
+
+    buildTypes {
+
+        debug {
+
+            applicationIdSuffix '.debug'
+
+            resValue 'string', 'APP_NAME', 'Onirun DEV'
+
+            buildConfigField "boolean", "IS_LOGGER_ENABLED", 'true'
+            buildConfigField "boolean", "CAN_DEBUG_API", 'true'
+
+            buildConfigField "String", "ONIRUN_URL_API", '"https://XXXXXXXXXX/"'
+        }
+
+        beta {
+
+            initWith release
+
+            applicationIdSuffix ".beta"
+
+            resValue 'string', 'APP_NAME', 'Onirun BETA'
+
+            signingConfig signingConfigs.debug
+
+            buildConfigField "boolean", "IS_LOGGER_ENABLED", 'true'
+            buildConfigField "boolean", "IS_CRASHLYTICS_ENABLED", 'true'
+
+            buildConfigField "String", "ONIRUN_URL_API", '"https://XXXXXXXXXX/"'
+
+            debuggable = true
+
+            minifyEnabled true
+            shrinkResources true
+            crunchPngs true
+
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+
+            buildConfigField "boolean", "IS_CRASHLYTICS_ENABLED", 'true'
+
+            minifyEnabled true
+            shrinkResources true
+            crunchPngs true
+
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+
+        release {
+
+            storeFile file("./signing/onirun.jks")
+            keyAlias "onirun"
+        }
+    }
+
+    sourceSets {
+        services
+        beta {
+            java.srcDirs = ["src/main/java", "src/release/java", "src/beta/java"]
+        }
+    }
+
+    dataBinding.enabled true
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+    implementation 'com.mcxiaoke.koi:core:0.5.5'
+
+    implementation "com.android.support:support-v13:$versions.support"
+    implementation "com.android.support:appcompat-v7:$versions.support"
+    implementation "com.android.support:customtabs:$versions.support"
+    implementation "com.android.support:design:$versions.support"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation "com.google.android.gms:play-services-base:16.1.0"
+    implementation "com.google.android.gms:play-services-location:16.0.0"
+    implementation "com.google.android.gms:play-services-maps:16.1.0"
+    implementation "com.google.android.gms:play-services-auth:16.0.1"
+
+    implementation "com.google.firebase:firebase-core:16.0.5"
+    implementation "com.google.firebase:firebase-auth:16.1.0"
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-dynamic-links:16.1.7'
+    implementation 'com.firebaseui:firebase-ui-storage:3.3.1'
+    kapt 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.mcxiaoke.photoview:library:1.2.3'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    implementation 'com.github.nitrico.lastadapter:lastadapter:2.3.0'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.6')
+
+    implementation 'com.facebook.android:facebook-android-sdk:4.34.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

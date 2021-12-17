@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.onirun.views.AvatarView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        app:isSizeBig="true" />
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        style="@style/textViewTitleBig"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        tools:text="Vincent Luis" />
+
+    <TextView
+        style="@style/textViewSubtitle"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/article_vip_grade" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonVIPFacebook"
+            style="@style/imageButtonDefault"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_button_oval"
+            android:contentDescription="@string/article_vip_facebook"
+            android:src="@drawable/contact_facebook" />
+
+        <ImageButton
+            android:id="@+id/buttonVIPInstagram"
+            style="@style/imageButtonDefault"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_button_oval"
+            android:contentDescription="@string/article_vip_instagram"
+            android:src="@drawable/contact_instagram" />
+
+        <ImageButton
+            android:id="@+id/buttonVIPTwitter"
+            style="@style/imageButtonDefault"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_button_oval"
+            android:contentDescription="@string/article_vip_twitter"
+            android:src="@drawable/contact_twitter" />
+
+        <ImageButton
+            android:id="@+id/buttonVIPStrava"
+            style="@style/imageButtonDefault"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_button_oval"
+            android:contentDescription="@string/article_vip_strava"
+            android:src="@drawable/contact_strava" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

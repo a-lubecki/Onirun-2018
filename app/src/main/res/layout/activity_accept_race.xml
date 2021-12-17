@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <ProgressBar
+        android:id="@+id/progressBarLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewType"
+            style="@style/textViewAlternative"
+            android:layout_marginTop="100dp"
+            tools:text="trail - trail long" />
+
+        <com.onirun.views.ChallengeTagView
+            android:id="@+id/textViewChallenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/textViewTitle"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            tools:text="Trail des remparts\nTrail 7km 15km" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            style="@style/textViewSubtitle"
+            android:layout_marginTop="8dp"
+            tools:text="Samedi 6 juin • Vannes" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/textViewEmojiBig"
+            android:layout_gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:text="💪"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            style="@style/textViewTitle"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center"
+            tools:text="Toto vous défie.\nAjouter cet évenement  à votre agenda ?" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonNo"
+                style="@style/imageButtonDefault"
+                android:contentDescription="@android:string/no"
+                android:src="@drawable/button_no_off" />
+
+            <ImageButton
+                android:id="@+id/buttonYes"
+                style="@style/imageButtonDefault"
+                android:layout_marginStart="60dp"
+                android:contentDescription="@android:string/yes"
+                android:src="@drawable/button_yes_off" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

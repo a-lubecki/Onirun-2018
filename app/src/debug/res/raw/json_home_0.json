@@ -1,0 +1,449 @@
+{
+  "content": [
+    {
+      "total": 12,
+      "events": [
+        {
+          "eventId": 1987,
+          "name": "La Tredionnaise VTT",
+          "city": "Trédion",
+          "dateBegin": 1540512000,
+          "dateEnd": 1540512000,
+          "department": "56",
+          "zipCode": "56250",
+          "raceTypes": [
+            "bike"
+          ],
+          "raceFormats": [
+            "elevation",
+            "charity",
+            "children"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2022,
+          "name": "Raid Sports Nature",
+          "city": "Inzinzac-Lochrist",
+          "dateBegin": 1540598400,
+          "dateEnd": 1540598400,
+          "department": "56",
+          "zipCode": "56650",
+          "raceTypes": [
+            "adventure"
+          ],
+          "raceFormats": [
+            "elevation",
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2025,
+          "name": "Raid T3Team",
+          "city": "Trédaniel",
+          "dateBegin": 1540598400,
+          "dateEnd": 1540598400,
+          "department": "22",
+          "zipCode": "22510",
+          "raceTypes": [
+            "adventure"
+          ],
+          "raceFormats": [
+            "elevation",
+            "team",
+            "official",
+            "charity"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2026,
+          "name": "Raid la Morideiz",
+          "city": "Morieux",
+          "dateBegin": 1540598400,
+          "dateEnd": 1540598400,
+          "department": "22",
+          "zipCode": "22400",
+          "raceTypes": [
+            "adventure"
+          ],
+          "raceFormats": [
+            "team",
+            "elevation"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2015,
+          "name": "Triathlon Damgan Pays de Muzillac",
+          "city": "Damgan",
+          "dateBegin": 1540688400,
+          "dateEnd": 1540688400,
+          "department": "56",
+          "zipCode": "56750",
+          "raceTypes": [
+            "triathlon"
+          ],
+          "raceFormats": [
+            "team",
+            "official"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2016,
+          "name": "Triathlon de la Côte de Granit Rose",
+          "city": "Trégastel",
+          "dateBegin": 1540688400,
+          "dateEnd": 1540688400,
+          "department": "22",
+          "zipCode": "22730",
+          "raceTypes": [
+            "duathlon",
+            "triathlon"
+          ],
+          "raceFormats": [
+            "children",
+            "team",
+            "official"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2018,
+          "name": "Triathlon du pays de Quimperlé",
+          "city": "Clohars-Carnoët",
+          "dateBegin": 1540688400,
+          "dateEnd": 1540688400,
+          "department": "29",
+          "zipCode": "29360",
+          "raceTypes": [
+            "triathlon"
+          ],
+          "raceFormats": [
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2019,
+          "name": "Triathlon du pays de Rance",
+          "city": "Taden",
+          "dateBegin": 1540688400,
+          "dateEnd": 1540688400,
+          "department": "22",
+          "zipCode": "22100",
+          "raceTypes": [
+            "triathlon",
+            "duathlon"
+          ],
+          "raceFormats": [
+            "team",
+            "children"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2021,
+          "name": "Triathlon Half Emeraude Tri Race",
+          "city": "Saint-Lunaire",
+          "dateBegin": 1540688400,
+          "dateEnd": 1540688400,
+          "department": "35",
+          "zipCode": "35800",
+          "raceTypes": [
+            "halfIronman"
+          ],
+          "raceFormats": [],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2023,
+          "name": "Emeraude Defi Raid",
+          "city": "Saint-Briac-sur-Mer",
+          "dateBegin": 1540688400,
+          "dateEnd": 1540688400,
+          "department": "35",
+          "zipCode": "35800",
+          "raceTypes": [
+            "adventure"
+          ],
+          "raceFormats": [
+            "night",
+            "elevation",
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2024,
+          "name": "Raid de l’Enssat",
+          "city": "Lannion",
+          "dateBegin": 1540688400,
+          "dateEnd": 1540688400,
+          "department": "22",
+          "zipCode": "22300",
+          "raceTypes": [
+            "adventure"
+          ],
+          "raceFormats": [
+            "team",
+            "elevation"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2014,
+          "name": "Triathlon du Pays de la Vilaine",
+          "city": "La Roche-Bernard",
+          "dateBegin": 1540857600,
+          "dateEnd": 1540857600,
+          "department": "56",
+          "zipCode": "56130",
+          "raceTypes": [
+            "triathlon"
+          ],
+          "raceFormats": [
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        }
+      ]
+    },
+    {
+      "total": 3,
+      "events": [
+        {
+          "eventId": 1968,
+          "name": "Semi-Marathon Saint Pol-Morlaix",
+          "city": "Morlaix",
+          "dateBegin": 1541286000,
+          "dateEnd": 1541372399,
+          "department": "29",
+          "zipCode": "29600",
+          "raceTypes": [
+            "halfMarathon",
+            "road"
+          ],
+          "raceFormats": [
+            "official",
+            "disabled",
+            "children"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        },
+        {
+          "eventId": 2010,
+          "name": "Vétathlon de la Chapelle de Brain",
+          "city": "La Chapelle-de-Brain",
+          "dateBegin": 1541289600,
+          "dateEnd": 1541289600,
+          "department": "35",
+          "zipCode": "35660",
+          "raceTypes": [
+            "bikathlon"
+          ],
+          "raceFormats": [
+            "team",
+            "official",
+            "children"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 20
+        },
+        {
+          "eventId": 1969,
+          "name": "Semi-marathon de Plouguin",
+          "city": "Plouguin",
+          "dateBegin": 1541890800,
+          "dateEnd": 1541977199,
+          "department": "29",
+          "zipCode": "29830",
+          "raceTypes": [
+            "road",
+            "halfMarathon"
+          ],
+          "raceFormats": [
+            "official",
+            "charity",
+            "team",
+            "disabled"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        }
+      ]
+    },
+    {
+      "total": 1,
+      "events": [
+        {
+          "eventId": 1667,
+          "name": "24H de Ploeren",
+          "city": "Ploeren",
+          "dateBegin": 1544223600,
+          "dateEnd": 1544310000,
+          "department": "56",
+          "zipCode": "56880",
+          "raceTypes": [
+            "duration"
+          ],
+          "raceFormats": [
+            "night",
+            "official",
+            "charity",
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 20
+        }
+      ]
+    },
+    {
+      "total": 1,
+      "events": [
+        {
+          "eventId": 1698,
+          "name": "Semi-Marathon de Liffré",
+          "city": "Liffré",
+          "dateBegin": 1554681600,
+          "dateEnd": 1554681600,
+          "department": "35",
+          "zipCode": "35340",
+          "raceTypes": [
+            "halfMarathon"
+          ],
+          "raceFormats": [
+            "team",
+            "official",
+            "charity"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 10
+        }
+      ]
+    },
+    {
+      "total": 2,
+      "events": [
+        {
+          "eventId": 1982,
+          "name": "Triathlon XXL Corsaire de Saint-Malo",
+          "city": "Saint-Malo",
+          "dateBegin": 1561248000,
+          "dateEnd": 1561248000,
+          "department": "35",
+          "zipCode": "35400",
+          "raceTypes": [
+            "ironman"
+          ],
+          "raceFormats": [
+            "team"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 20
+        },
+        {
+          "eventId": 2005,
+          "name": "Vilainator",
+          "city": "Rieux",
+          "dateBegin": 1561852800,
+          "dateEnd": 1561852800,
+          "department": "56",
+          "zipCode": "56350",
+          "raceTypes": [
+            "obstacle"
+          ],
+          "raceFormats": [
+            "fun",
+            "team",
+            "children"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 20
+        }
+      ]
+    },
+    {
+      "total": 1,
+      "events": [
+        {
+          "eventId": 1754,
+          "name": "Tout Rennes Court",
+          "city": "Rennes",
+          "dateBegin": 1570838400,
+          "dateEnd": 1570838400,
+          "department": "35",
+          "zipCode": "35000",
+          "raceTypes": [
+            "halfMarathon",
+            "road"
+          ],
+          "raceFormats": [
+            "charity",
+            "official",
+            "women",
+            "children"
+          ],
+          "challenge": false,
+          "nbFriends": 0,
+          "engagement": 0,
+          "status": 20
+        }
+      ]
+    }
+  ],
+  "totalPages": 2
+}

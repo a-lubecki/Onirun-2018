@@ -1,0 +1,217 @@
+<resources>
+
+    <!-- global -->
+    <string name="error_title_default">"Problème…"</string>
+    <string name="error_message_default">"Une erreur de réseau est survenue."</string>
+    <string name="error_message_maintenance">"Notre service est actuellement en maintenance, veuillez réessayer plus tard."</string>
+    <string name="error_message_not_found">"La récupération des données a échoué."</string>
+    <string name="error_message_logout">"Vous avez été déconnecté."</string>
+    <string name="error_title_login">"Problème de connexion"</string>
+    <string name="error_login_google">"Impossible de se connecter avec ce compte."</string>
+    <string name="error_login_fb">"Une erreur est survenue lors de la connexion avec votre compte Facebook"</string>
+    <string name="error_login_fb_email_missing">"Pour vous connecter avec Facebook, Onirun a besoin d'accéder à votre adresse email"</string>
+    <string name="error_link_generation">"La génération du lien de partage a échoué."</string>
+
+    <string name="quit_message">"Souhaitez-vous quitter l'application Onirun ?"</string>
+
+    <string name="button_retry">"Réessayer"</string>
+    <string name="members_only">"Celui qui n'a pas\nd'objectifs ne risque pas\nde les atteindre"</string>
+    <string name="become_member">"Devenez membre Onirun"</string>
+
+    <string name="menu_item_save">"Enregistrer"</string>
+    <string name="menu_item_ignore">"Ignorer"</string>
+    <string name="menu_item_login">"Valider"</string>
+    <string name="menu_item_next">"Suivant"</string>
+
+    <!-- onboarding -->
+    <string name="onboarding_next">"Continuer"</string>
+    <string name="login_signin_member">"Déjà membre ?"</string>
+    <string name="onboarding_done_title">"OK, c'est parti !"</string>
+    <string name="onboarding_done_subtitle">"Onirun est en train de sélectionner les courses qui correspondent à vos préférences"</string>
+
+    <!-- deep link -->
+    <string name="deeplink_accept_race">"%s vous lance un défi.\nAjouter cet événement à votre agenda ?"</string>
+    <string name="deeplink_accept_friend">"%s souhaite vous ajouter en tant qu'ami."</string>
+
+    <!-- main -->
+    <string name="menu_home">"La sélection des courses à venir"</string>
+    <string name="menu_calendar">"Enregistrés"</string>
+    <string name="menu_news">"À la une"</string>
+    <string name="menu_notifications">"Notifications"</string>
+    <string name="list_title_home">"Sélection depuis vos préférences"</string>
+    <string name="list_title_calendar">"Défiez vos amis sur vos prochaines courses !"</string>
+    <string name="list_title_news">"Notre sélection de courses incontournables"</string>
+    <string name="list_title_notifications">"Les dernières nouvelles de vos activités"</string>
+    <string name="home_filter_button">"Préférences"</string>
+    <string name="home_filter_title">"Préférences"</string>
+    <string name="home_no_events">"Notre terrain de jeu est\nimmense, vous ne trouvez\npas votre course ? \nContactez nous !"</string>
+    <string name="calendar_filter_button">"Filtres"</string>
+    <string name="calendar_filter_title">"Afficher"</string>
+    <string name="calendar_type_owner">"Uniquement mes courses"</string>
+    <string name="calendar_type_friends">"Les courses de mes ami(e)s"</string>
+    <string name="calendar_type_owner_and_friends">"Mes courses et celles de mes ami(e)s"</string>
+
+    <!-- events-->
+    <string name="event_box_not_validated">"Dates pour %s en attente de confirmation.\nLes informations présentes ici correspondent au précédent événement. Restez notifié des mises à jour en ajoutant une course à votre agenda !"</string>
+    <string name="list_no_events">"Aucune course de prévue\npour le moment ?"</string>
+    <plurals name="list_nb_events">
+        <item quantity="one">"1 course"</item>
+        <item quantity="other">"%d courses"</item>
+    </plurals>
+    <string name="event_description_title">"Au programme"</string>
+    <string name="event_description_show_more">"en savoir plus"</string>
+    <string name="race_description_start">"Départ : %s"</string>
+    <string name="race_description_location">"Lieu : %s"</string>
+    <string name="race_description_price">"Prix : %s"</string>
+    <string name="event_description_placeholder">"En attente de plus de détails de l'organisateur"</string>
+    <string name="event_contact_inscription">"Inscrivez-vous en ligne"</string>
+    <string name="event_contact_website">"Consultez notre site Internet"</string>
+    <string name="event_contact_facebook">"Suivez-nous sur Facebook"</string>
+    <string name="event_contact_twitter">"Suivez-nous sur Twitter"</string>
+    <string name="event_contact_instagram">"Suivez-nous sur Instagram"</string>
+    <string name="event_contact_email">"Contactez-nous par Email"</string>
+    <string name="event_contact_phone">"Appeler"</string>
+    <string name="event_tag_challenge">"Défi Onirun"</string>
+    <string name="race_engage_title">"Enregistrer cette course dans mon agenda ?"</string>
+    <string name="race_engage_0">"Non, mais pour une prochaine fois."</string>
+    <string name="race_engage_1">"Oui, ça peut m'intéresser…"</string>
+    <string name="race_engage_2">"Oui, je suis super motivé !"</string>
+
+    <!-- friends -->
+    <string name="race_friends_challenge">"Lancer un défi"</string>
+    <string name="race_friends_title_noone">"Inviter des amis à\nrejoindre cette course ?"</string>
+    <string name="race_friends_title_someone">"Il semble y avoir du monde\nprêt à vous suivre"</string>
+    <string name="friends_list_title">"Amis"</string>
+    <string name="friends_list_challenge">"Inviter un ami"</string>
+    <string name="share_message_challenge">"Je te défie sur Onirun ! %s"</string>
+
+    <!-- login -->
+    <string name="login_facebook">"Poursuivre avec Facebook"</string>
+    <string name="login_google">"Poursuivre avec Google"</string>
+    <string name="login_mail">"Poursuivre avec email"</string>
+    <string name="login_subtitle">"Vous allez adorer Onirun !"</string>
+    <string name="login_sign_in">"Se connecter"</string>
+    <string name="login_title_default">"Osez rêver. Osez essayer. Osez avoir du succès"</string>
+    <string name="login_title_deep_link">"L'application la plus simple et efficace pour s'organiser entre amis"</string>
+    <string name="login_title_friends">"Connectez-vous pour défier et retrouver vos amis"</string>
+    <string name="login_title_events">"Connectez-vous pour ajouter une course à votre agenda"</string>
+    <string name="login_title_notification">"Connectez-vous pour suivre l'actualité de vos courses et de vos amis"</string>
+    <string name="login_field_mail">"Votre email"</string>
+    <string name="login_field_password">"Votre mot de passe"</string>
+    <string name="login_password_hint">"Le mot de passe doit contenir au moins %s dont %s et %s"</string>
+    <string name="login_password_condition0">8 caractères</string>
+    <string name="login_password_condition1">1 majuscule</string>
+    <string name="login_password_condition2">1 chiffre</string>
+    <string name="login_reset_password">"Mot de passe oublié ?"</string>
+    <string name="login_reset_password_message">"Un email pour réinitialiser votre mot de passe va être envoyé à l'adresse %s.\nSouhaitez-vous réinitialiser votre mot de passe ?"</string>
+    <string name="login_reset_password_done">"Email envoyé"</string>
+
+    <string name="signup_consent_terms_title">"Service personnalisé !"</string>
+    <string name="signup_consent_terms_subtitle">"En devenant membre Onirun vous acceptez les %s. Pour plus d'informations sur la façon dont nous utilisons vos données personnelles ainsi que sur vos droits, consultez notre %s."</string>
+    <string name="signup_consent_terms_subtitle_part0"><u>"Conditions Générales d'Utilisation"</u></string>
+    <string name="signup_consent_terms_subtitle_part1"><u>"Politique de Confidentialité"</u></string>
+    <string name="signup_consent_push_title">"Notifications Push"</string>
+    <string name="signup_consent_push_subtitle">"Profitez des notifications push pour être rapidement informé du suivi de vos courses, l'actualité de vos amis, ou de nos recommandations."</string>
+    <string name="signup_consent_mail_title">"Notifications par Email"</string>
+    <string name="signup_consent_mail_subtitle">"De temps en temps, nous aimerions vous envoyer des emails pour vous informer de nouvelles fonctionnalités ou vous proposer des promotions et offres d'Onirun et de ses partenaires."</string>
+    <string name="signup_consent_validate">"Pour continuer, vous devez accepter les Conditions Générales d'Utilisation"</string>
+
+    <!-- settings -->
+    <string name="settings_update_profile">"Modifier mon niveau"</string>
+    <string name="settings_login">"Connexion"</string>
+    <string name="settings_promote_title">"Vous n'êtes pas connecté"</string>
+    <string name="settings_promote_subtitle">"Suivez et partagez vos courses avec vos amis"</string>
+    <string name="settings_section_about">"À propos"</string>
+    <string name="settings_location">"Localisation"</string>
+    <string name="settings_race_types">"Type de courses"</string>
+    <string name="settings_race_formats">"Format de courses"</string>
+    <string name="settings_friends">"Amis"</string>
+    <string name="settings_notifications">"Notifications"</string>
+    <string name="settings_suggest">"Suggérer une course"</string>
+    <string name="settings_comment">"Vos remarques"</string>
+    <string name="settings_about">"Qui sommes-nous ?"</string>
+    <string name="settings_terms">"Conditions générales d'utilisation"</string>
+    <string name="settings_privacy">"Politique de confidentialité"</string>
+
+    <string name="settings_logout">"Se déconnecter"</string>
+    <string name="settings_logout_confirm">"Souhaitez-vous vraiment vous déconnecter ?"</string>
+    <string name="settings_location_title_header">"Trouver les courses"</string>
+    <string name="settings_location_section_header">"Par département"</string>
+    <string name="settings_all_group">TOUTES</string>
+    <string name="settings_race_type_title_header">"Types de courses"</string>
+    <string name="settings_race_type_section_road">"Courses sur route"</string>
+    <string name="settings_race_type_section_nature">"Courses en nature"</string>
+    <string name="settings_race_type_section_multisport">"Courses multisports"</string>
+    <string name="settings_race_format_title_header">"Formats de courses"</string>
+    <string name="britain_mail_subject">"Plus de départements !"</string>
+    <string name="britain_text">"Onirun est actuellement disponible\npour la région Bretagne uniquement."</string>
+    <string name="britain_button">"Votre département n'est pas référencé ?"</string>
+
+    <string name="settings_notif_login">Voir toutes les notifications</string>
+    <string name="settings_notif_races_title">"Le suivi de vos courses"</string>
+    <string name="settings_notif_races_subtitle">"Changement de date ou d'horaire, ne manquez rien des modifications de courses !"</string>
+    <string name="settings_notif_friends_title">"L'actualité de vos amis</string>
+    <string name="settings_notif_friends_subtitle">"Suivez l'actualité de vos amis, participez facilement aux mêmes courses"</string>
+    <string name="settings_notif_suggest_title">"Nos recommandations"</string>
+    <string name="settings_notif_suggest_subtitle">"Nos conseils et suggestions des plus belles courses auxquelles participer"</string>
+    <string name="settings_notif_news_title">"Actualité Onirun"</string>
+    <string name="settings_notif_news_subtitle">"Mise en place de nouvelles fonctionnalités et actus produits sur Onirun"</string>
+    <string name="settings_notif_push">"Notification Push"</string>
+    <string name="settings_notif_mail">"Notification par Email"</string>
+
+    <string name="settings_username_field_username">"Votre pseudo"</string>
+    <string name="settings_username_hint">"Le pseudo doit contenir au moins 3 caractères sans caractères spéciaux ni accents"</string>
+
+    <!-- profile -->
+    <string name="profile_subtitle_grade">"Vous êtes aujourd'hui :"</string>
+    <string name="profile_subtitle_questions">"Personnalisez votre profil !"</string>
+    <string name="profile_question_gender">"Vous êtes ?"</string>
+    <string name="profile_answer_gender0">"🏃‍♀"️</string>
+    <string name="profile_answer_gender1">"🏃‍"</string>
+    <string name="profile_question_nb_years">"Depuis combien d'années pratiquez-vous ?"</string>
+    <string name="profile_answer_nb_years0">"0 à 1"</string>
+    <string name="profile_answer_nb_years1">"1 à 3"</string>
+    <string name="profile_answer_nb_years2">"3 à 5"</string>
+    <string name="profile_answer_nb_years3">"5+"</string>
+    <string name="profile_question_nb_trainings">"Nombre d'entraînements par semaine ?"</string>
+    <string name="profile_answer_nb_trainings0">"1"</string>
+    <string name="profile_answer_nb_trainings1">"3"</string>
+    <string name="profile_answer_nb_trainings2">"5+"</string>
+    <string name="profile_question_ran_some_races">"Avez-vous déjà participé à une course ?"</string>
+    <string name="profile_answer_ran_some_races0">"Oui"</string>
+    <string name="profile_answer_ran_some_races1">"Non"</string>
+    <string name="profile_question_nb_races_this_year">"Combien de courses avez-vous fait les derniers mois ?"</string>
+    <string name="profile_answer_nb_race_this_year0">"0"</string>
+    <string name="profile_answer_nb_race_this_year1">"1 à 2"</string>
+    <string name="profile_answer_nb_race_this_year2">"3 à 4"</string>
+    <string name="profile_answer_nb_race_this_year3">"5+"</string>
+    <string name="profile_question_race_category">"Dans quelle catégorie courez-vous ?"</string>
+    <string name="profile_answer_race_category0">"Cadet"</string>
+    <string name="profile_answer_race_category1">"Senior"</string>
+    <string name="profile_answer_race_category2">"Vétéran"</string>
+    <string name="profile_question_is_in_club">"Faites-vous partie d'un club ?"</string>
+    <string name="profile_answer_is_in_club0">"Oui"</string>
+    <string name="profile_answer_is_in_club1">"Non"</string>
+    <string name="profile_question_club_name">"Nom du club"</string>
+
+    <!-- notifications -->
+    <string name="default_notification_channel_id">"Alertes"</string>
+    <string name="time_now">"Maintenant"</string>
+    <string name="time_min">"Il y a %d min"</string>
+    <string name="time_hour">"Il y a %d h"</string>
+    <string name="time_day">"Il y a %d j"</string>
+    <string name="notification_default_login">"Devenez membre Onirun ! Soyez automatiquement notifié du suivi de vos courses, l'actualité de vos amis ou nos recommandations."</string>
+    <string name="notification_default_welcome">"Bienvenue sur Onirun !"</string>
+
+    <!-- articles -->
+    <string name="article_subtitle_selection">"Sélection Onirun"</string>
+    <string name="article_subtitle_vip">"Coureur à suivre"</string>
+    <string name="article_share">"Partager l'article"</string>
+    <string name="article_show_event">"Ajouter à mon agenda"</string>
+    <string name="article_vip_grade">"Coureur expérimenté"</string>
+    <string name="article_vip_facebook">"Facebook"</string>
+    <string name="article_vip_instagram">"Instagram"</string>
+    <string name="article_vip_twitter">"Twitter"</string>
+    <string name="article_vip_strava">"Strava"</string>
+
+</resources>

@@ -1,0 +1,151 @@
+<resources>
+
+    <style name="textViewDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textTitle</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textViewDefaultBig" parent="textViewDefault">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textViewAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textAction</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textViewAlternative">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/textAlternative</item>
+        <item name="android:fontFamily">@font/firasans_medium</item>
+        <item name="fontFamily">@font/firasans_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textViewBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="textViewTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textTitle</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/firasans_medium</item>
+        <item name="fontFamily">@font/firasans_medium</item>
+    </style>
+
+    <style name="textViewTitleBig" parent="textViewTitle">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textViewTitleHuge" parent="textViewTitle">
+        <item name="android:textSize">40sp</item>
+        <item name="android:lineSpacingExtra">-4dp</item>
+    </style>
+
+    <style name="textViewSubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textSubtitle</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textViewEmoji">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/zeplinBlack</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textViewEmojiBig" parent="textViewEmoji">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="buttonDefault">
+        <item name="android:background">@drawable/shape_button_oval</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">270dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textButton</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/firasans_medium</item>
+        <item name="fontFamily">@font/firasans_medium</item>
+    </style>
+
+    <style name="buttonFloating" parent="buttonDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+    <style name="buttonBorderlessDefault">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textButton</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/firasans_medium</item>
+        <item name="fontFamily">@font/firasans_medium</item>
+    </style>
+
+    <style name="buttonBorderlessAction" parent="buttonBorderlessDefault">
+        <item name="android:textColor">@color/textAction</item>
+    </style>
+
+    <style name="imageButtonDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="toggleButtonDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/toggle_button_text_color</item>
+        <item name="android:background">@drawable/toggle_button_background_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="editTextDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textTitle</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="separatorDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/separatorDefault</item>
+    </style>
+
+</resources>

@@ -1,0 +1,98 @@
+{
+  "event": {
+    "eventId": 1667,
+    "city": "Ploeren",
+    "dateBegin": 1544223600,
+    "dateEnd": 1544310000,
+    "department": "56",
+    "description": "La 16e édition des 24h de Ploeren  (championnat de Bretagne individuel) et la 11e édition des 12h et 6h auront lieu les samedi 8 et dimanche 9 décembre 2018.\nDepuis décembre 2003, l’association de Ploeren Endurance organise ses 24 heures pédestres en reversant les bénéfices des engagements à l’AFM (Association Française contre les myopathies).",
+    "illustration": "1f53b1ae-dd53-11e8-939d-fa163eaaf5e5",
+    "name": "24H de Ploeren",
+    "zipCode": "56880",
+    "races": [
+      {
+        "raceId": 2857,
+        "eventId": 1667,
+        "description": "Un parcours en boucle de 1 000 mètres (mesure IAAF), à allure libre (course à pied ou marche) autour du stade de football Pierre-Le Douarin et la salle du SPI. Les compétiteurs inscrits sur ce championnat de Bretagne 24H individuel devront porter visiblement le maillot de leur club FFA, au départ et à l’arrivée de la course.\nLa clôture des inscriptions (en ligne et par courrier postal) est fixée au samedi 24 novembre 2018. Pas d’inscription sur place.\nLes épreuves sont ouvertes à toute personne majeure le jour de l’épreuve, licenciée ou non.\n\nRetrouvez tous les détails sur notre site internet.",
+        "name": "24H en individuel",
+        "price": "40€",
+        "type": "duration",
+        "formats": [
+          "night",
+          "official",
+          "charity"
+        ],
+        "label": "regional",
+        "startTime": 1544266800,
+        "address": "Stade Pierre-Le Douarin"
+      },
+      {
+        "raceId": 2858,
+        "eventId": 1667,
+        "description": "Les relais 24H par équipe composés de 4 personnes sont libres et s’effectueront obligatoirement dans une zone réservée à cet effet. Un parcours en boucle de 1 000 mètres (mesure IAAF), à allure libre (course à pied ou marche) autour du stade de football Pierre-Le Douarin et la salle du SPI. La clôture des inscriptions (en ligne et par courrier postal) est fixée au samedi 24 novembre 2018. Pas d’inscription sur place.\nLes épreuves sont ouvertes à toute personne majeure le jour de l’épreuve, licenciée ou non.\n\nRetrouvez tous les détails sur notre site internet.",
+        "name": "24H en relais",
+        "price": "60€ par équipe",
+        "type": "duration",
+        "formats": [
+          "night",
+          "team",
+          "charity"
+        ],
+        "label": "",
+        "startTime": 1544266800,
+        "address": "Stade Pierre-Le Douarin"
+      },
+      {
+        "raceId": 2859,
+        "eventId": 1667,
+        "description": "Un parcours en boucle de 1 000 mètres (mesure IAAF), à allure libre (course à pied ou marche) autour du stade de football Pierre-Le Douarin et la salle du SPI. \nLa clôture des inscriptions (en ligne et par courrier postal) est fixée au samedi 24 novembre 2018. Pas d’inscription sur place.\nLes épreuves sont ouvertes à toute personne majeure le jour de l’épreuve, licenciée ou non.\n\nRetrouvez tous les détails sur notre site internet.",
+        "name": "12H en individuel",
+        "price": "25€",
+        "type": "duration",
+        "formats": [
+          "night",
+          "charity"
+        ],
+        "label": "",
+        "startTime": 1544266800,
+        "address": "Stade Pierre-Le Douarin"
+      },
+      {
+        "raceId": 3416,
+        "eventId": 1667,
+        "description": "Un parcours en boucle de 1 000 mètres (mesure IAAF), à allure libre (course à pied ou marche) autour du stade de football Pierre-Le Douarin et la salle du SPI. \nLa clôture des inscriptions (en ligne et par courrier postal) est fixée au samedi 24 novembre 2018. Pas d’inscription sur place.\nLes épreuves sont ouvertes à toute personne majeure le jour de l’épreuve, licenciée ou non.\n\nRetrouvez tous les détails sur notre site internet.",
+        "name": "6H en individuel",
+        "price": "15€",
+        "type": "duration",
+        "formats": [
+          "charity"
+        ],
+        "startTime": 1544266800,
+        "address": "Stade Pierre-Le Douarin"
+      }
+    ],
+    "otherInfo": "",
+    "conditions": "",
+    "facilities": [
+      "buffet",
+      "massage",
+      "parking",
+      "shower"
+    ],
+    "location": {
+      "lat": 47.65479166060851,
+      "lng": -2.8653166903973215
+    },
+    "promoter": {
+      "id": 76,
+      "name": "24H de Ploeren"
+    },
+    "status": 20,
+    "mail": "xtremaudan@orange.fr",
+    "phone": "06 84 27 86 68",
+    "urlPayment": "http://www.sportinnovation.fr/inscription3/inscription.php?crs=3132",
+    "urlWebsite": "http://www.ploeren-endurance.fr/",
+    "urlFacebook": "https://www.facebook.com/ploeren.endurance/"
+  },
+  "registrations": []
+}

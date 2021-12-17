@@ -1,0 +1,47 @@
+{
+  "content": [
+    {
+      "notifId": 44,
+      "data": {
+        "eventId": 1638
+      },
+      "seen": true,
+      "dateAdd": 1540155259000,
+      "type": "races",
+      "message": "Mise à jour de la course"
+    },
+    {
+      "notifId": 38,
+      "data": {
+        "eventId": 1638
+      },
+      "seen": true,
+      "dateAdd": 1540155071000,
+      "type": "suggest",
+      "message": "Nouvel évènement"
+    },
+    {
+      "notifId": 32,
+      "data": {
+        "friendId": 50
+      },
+      "seen": true,
+      "dateAdd": 1540154780000,
+      "type": "friends",
+      "message": "Nouvel ami",
+      "emoji": "\ud83d\udc4d"
+    },
+    {
+      "notifId": 26,
+      "data": {
+        "slug": "article-test"
+      },
+      "seen": true,
+      "dateAdd": 1540154550000,
+      "type": "news",
+      "message": "Nouvel article",
+      "emoji": "\ud83d\udc4d"
+    }
+  ],
+  "totalPages": 1
+}

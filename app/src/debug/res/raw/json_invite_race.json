@@ -1,0 +1,21 @@
+{
+  "isFriend": false,
+  "runner": {
+    "runnerId": 123456,
+    "userName": "Toto",
+    "grade": "pro"
+  },
+  "engagement": 2,
+  "event": {
+    "eventId": 111,
+    "name": "Trail des remparts",
+    "challenge": true,
+    "dateBegin": 1523802725,
+    "city": "Vannes"
+  },
+  "race": {
+    "raceId": 1,
+    "name": "Trail 7km - 15km",
+    "type": "marathon"
+  }
+}

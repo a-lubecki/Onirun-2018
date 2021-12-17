@@ -1,0 +1,11 @@
+{
+  "gender": "male",
+  "nbYears": 5,
+  "nbTrainings": 5,
+  "ranSomeRaces": true,
+  "nbRacesThisYear": 5,
+  "raceCategory": "VE",
+  "isInClub": true,
+  "clubName": "Test",
+  "grade": "experienced"
+}

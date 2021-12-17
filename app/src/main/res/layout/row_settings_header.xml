@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.onirun.recyclerview.TitleHeader" />
+    </data>
+
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        style="@style/textViewTitleBig"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@{item.title}"
+        tools:text="Types de courses" />
+
+</layout>
