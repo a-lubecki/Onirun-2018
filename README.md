@@ -1,5 +1,14 @@
 # Onirun
 
+Onirun was an Android app to help runners to find races in France.
+
+We were a team of 4 people to create the project on our free time :
+- me for the app development
+- 1 backend developer
+- 1 designer
+- 1 marketer
+
+I could learn Kotlin with this project as this language appeared in Android in 2018, 1 year before.
 
 ### Onboarding
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/96313983/167275251-8aea1769-d679-47b8-ad33-1cbffe546e46.png">
